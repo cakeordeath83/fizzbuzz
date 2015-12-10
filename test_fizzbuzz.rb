@@ -26,4 +26,5 @@ class TestFizzBuzz < MiniTest::Unit::TestCase
   def test_minus_number
 	  assert_equal "", @thing.fizzbuzz(-7) 
   end
+  
 end
