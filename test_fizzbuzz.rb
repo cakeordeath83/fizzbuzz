@@ -4,7 +4,7 @@ require 'minitest/autorun'
 class TestFizzBuzz < MiniTest::Unit::TestCase
 
   def setup
-	  @thing = FizzBuzz.new
+    @thing = FizzBuzz.new
   end
 
   def test_fizz
@@ -12,7 +12,7 @@ class TestFizzBuzz < MiniTest::Unit::TestCase
   end
 
   def test_buzz
-	  assert_equal "buzz", @thing.fizzbuzz(5) 
+    assert_equal "buzz", @thing.fizzbuzz(5) 
   end
 
   def test_fizzbuzz
@@ -22,9 +22,9 @@ class TestFizzBuzz < MiniTest::Unit::TestCase
   def test_number
     assert_equal "", @thing.fizzbuzz(7) 
   end
-
-  def test_minus_number
-	  assert_equal "", @thing.fizzbuzz(-7) 
-  end
   
+  def test_negative_number
+    assert_equal "", @thing.fizzbuzz(-7) 
+  end
+ 
 end
